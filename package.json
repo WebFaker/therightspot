@@ -1,4 +1,12 @@
 {
+  "name": "ShAdOwInK",
+  "version": "1.0.0",
+  "description": "A simple starter pack to make clean front-end development 🌶",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShAd0wInK/starter-pack.git"
+  },
+  "homepage": "https://github.com/ShAd0wInK/starter-pack/blob/master/README.md",
   "devDependencies": {
     "babel": "^6.23.0",
     "browser-sync": "^2.24.4",
