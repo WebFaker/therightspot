@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify-es": "^1.0.4",
+    "jshint": "^2.9.5",
+    "webpack-stream": "^4.0.3"
+  }
+}
