@@ -1,0 +1,8 @@
+.header {
+    background: #555;
+    &_title {
+        color: #fff;
+        font-size: $xxBig;
+        padding: 25px;
+    }
+}

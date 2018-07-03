@@ -6,7 +6,7 @@
     - [Summary:](#summary)
     - [I - Make it work 👍](#i---make-it-work-👍)
         - [1. Install dependencies:](#1-install-dependencies)
-        - [2. Install gulp ( in global ):](#2-install-gulp--in-global-)
+        - [2. Install gulp *( in global )*:](#2-install-gulp--in-global-)
         - [3. Build and / or watch:](#3-build-and--or-watch)
     - [II - Create new scss and js files](#ii---create-new-scss-and-js-files)
         - [1. Tree](#1-tree)
@@ -31,35 +31,31 @@
 ### 1. Install dependencies:
 * use `yarn` or `npm install`
 
-### 2. Install gulp ( in global ):
+### 2. Install gulp *( in global )*:
 * use `yarn global add gulp` or `npm install -g gulp`
 
 ### 3. Build and / or watch:
-* use `gulp build` or simply `gulp`
+* use `gulp build` to build your work **one time**
+* or simply `gulp` to build it **in a loop** and actualize your modifications
 
-> Now you have your environment ready to work
+> Now you have your environment **ready to work**
 
 ## II - Create new scss and js files
 
 ### 1. Tree
 
 ```bash
-├── .babelrc
-├── .gitignore
-├── .jshintrc
-├── README.md
-├── gulpfile.js
-├── package.json
+
 ├── public
-│   ├── css
-│   │   └── master.min.css
 │   ├── index.html
-│   └── js
-│       └── app.min.js
-├── src
 │   ├── assets
 │   │   ├── fonts
 │   │   └── images
+│   ├── css
+│   │   └── master.min.css
+│   └── js
+│       └── app.min.js
+├── src
 │   ├── js
 │   │   ├── app.js
 │   │   └── ui.js
@@ -69,11 +65,18 @@
 │       │   └── _header.scss
 │       ├── global
 │       │   ├── _fonts.scss
+│       │   ├── _global.scss
 │       │   ├── _reset.scss
 │       │   └── _variables.scss
-│       ├── master.scss
-│       └── mixins
-│           └── _responsive.scss
+│       ├── mixins
+│       │   └── _responsive.scss
+│       └── master.scss
+├── .babelrc
+├── .gitignore
+├── .jshintrc
+├── gulpfile.js
+├── package.json
+├── README.md
 └── yarn.lock
 ```
 
@@ -95,10 +98,12 @@
 
 ```json
     "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
-    "gulp-rename": "^1.2.3",
+    "gulp-rename": "^1.3.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify-es": "^1.0.4",
     "jshint": "^2.9.5",
