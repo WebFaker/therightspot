@@ -1,0 +1,10 @@
+.content {
+    background: $lowGrey;
+    height: 70vh;
+    &_text {
+        font-size: $xReg;
+        font-weight: 100;
+        padding: 100px 50px;
+        line-height: 1.5;
+    }
+}

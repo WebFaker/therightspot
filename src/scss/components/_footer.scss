@@ -1,0 +1,12 @@
+.footer {
+    background: $midGrey;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    &_text{
+        color: #fff;
+        font-size: $Big;
+        font-weight: 250;
+        padding: 0 50px;
+    }
+}
