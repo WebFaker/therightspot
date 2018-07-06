@@ -1,19 +1,22 @@
-# Starter-pack
+# 🌶 Front-end starter
+
+This starter will help you ( *I hope* ) to make clean front-end development.
+**This starter**
 
 <!-- TOC -->
 
-- [Starter-pack](#starter-pack)
+- [🌶 Front-end starter](#🌶-front-end-starter)
     - [Summary:](#summary)
-    - [I - Make it work 👍](#i---make-it-work-👍)
+    - [I - 👍 Make it work](#i---👍-make-it-work)
         - [1. Install dependencies:](#1-install-dependencies)
         - [2. Install gulp *( in global )*:](#2-install-gulp--in-global-)
         - [3. Build and / or watch:](#3-build-and--or-watch)
-    - [II - Create new scss and js files](#ii---create-new-scss-and-js-files)
+    - [II - 📜 Create new scss and js files](#ii---📜-create-new-scss-and-js-files)
         - [1. Tree](#1-tree)
-        - [2. To create new components files:](#2-to-create-new-components-files)
+        - [2.Way to create new components files:](#2way-to-create-new-components-files)
             - [SCSS](#scss)
             - [JS](#js)
-    - [III - Dependencies](#iii---dependencies)
+    - [III - 🗄 Dependencies](#iii---🗄-dependencies)
 
 <!-- /TOC -->
 ## Summary:
@@ -27,20 +30,23 @@
         * SCSS
         * JS
 * III - Dependencies
-## I - Make it work 👍
+## I - 👍 Make it work 
 ### 1. Install dependencies:
 * use `yarn` or `npm install`
+ ( *I take into account that you have already installed `yarn` or `npm`* )
+ > Now you have **all your dependencies** installed.
 
 ### 2. Install gulp *( in global )*:
-* use `yarn global add gulp` or `npm install -g gulp`
+* use `yarn global add gulp` **or**<> `npm install -g gulp`
+> Now you can run **gulp tasks** !
 
 ### 3. Build and / or watch:
-* use `gulp build` to build your work **one time**
-* or simply `gulp` to build it **in a loop** and actualize your modifications
+* use `gulp build` to build your work **one time** ( *open `public/index.html` in your browser after that* )
+* or simply `gulp` to build it **in a loop** and actualize your modifications ( *using BrowserSync* 🔄 )
 
-> Now you have your environment **ready to work**
+> Now you have your dev environment **ready to work** 👍
 
-## II - Create new scss and js files
+## II - 📜 Create new scss and js files 
 
 ### 1. Tree
 
@@ -80,7 +86,7 @@
 └── yarn.lock
 ```
 
-### 2. To create new components files: 
+### 2.Way to create new components files: 
 
 #### SCSS
 
@@ -94,7 +100,7 @@
 * Create your file with this structure: `filename.js` 
 + Don't forget to import this new file in `app.js` like that: `import: './filename'`
 
-## III - Dependencies
+## III - 🗄 Dependencies 
 
 ```json
     "babel": "^6.23.0",
