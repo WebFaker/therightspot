@@ -1,6 +1,5 @@
 # I will not push the public version
-public/js
-public/css
+public/*
 
 # Logs
 logs
