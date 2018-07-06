@@ -12,9 +12,9 @@ const rename = require('gulp-rename');
 // ==> HTML -------------------------------------
     // when I write 'gulp html' in the terminal
 gulp.task('html', function() {
-    // Take the html file
-    return gulp.src('src/index.html')
-    // put the file in ./public
+    // Take all html files
+    return gulp.src('src/*.html')
+    // put all the files in ./public
     .pipe(gulp.dest('public'))
 });
 
