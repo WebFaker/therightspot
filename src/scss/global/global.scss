@@ -7,4 +7,9 @@
         padding: 100px 50px;
         line-height: 1.5;
     }
+    &_link {
+        color: $red;
+        font-weight: 500;
+        text-decoration: none;
+    }
 }

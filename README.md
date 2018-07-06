@@ -1,7 +1,9 @@
 # 🌶 Front-end starter
 
 This starter will help you ( *I hope* ) to make clean front-end development.
-**This starter**
+**This starter**: 
+- **compile** your *style* files into a new single file, **mininfy** it and put it in a **public** folder
+- **compile** your *scripts* files into a new single file, **mininfy** it and put it in a **public** folder
 
 <!-- TOC -->
 
