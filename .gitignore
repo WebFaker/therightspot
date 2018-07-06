@@ -1,5 +1,7 @@
 # I will not push the public version
 public/*
+# But I'll keep the folder, so I add .gitkeep
+!public/ .gitkeep
 
 # Logs
 logs
