@@ -50,8 +50,7 @@ This starter is **used to** :
 > Now you have your dev environment **ready to work** 👍
 ## III - 📜 Create new scss and js files :
 ### 1. Tree
-```CSS
-
+```json
 ├── public
 │   └── .gitkeep
 ├── src
@@ -96,7 +95,7 @@ This starter is **used to** :
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-rename": "^1.3.0",
@@ -105,6 +104,6 @@ This starter is **used to** :
     "jshint": "^2.9.5",
     "webpack-stream": "^4.0.3"
 ```
-```CSS
+```json
 .jshintrc
 ```

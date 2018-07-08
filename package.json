@@ -1,17 +1,17 @@
 {
   "name": "ShAdOwInK",
   "version": "1.0.0",
-  "description": "A simple starter pack to make clean front-end development 🌶",
+  "description": "This starter will help you ( I hope ) to make clean front-end development.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShAd0wInK/starter-pack.git"
+    "url": "https://github.com/ShAd0wInK/front-end-starter.git"
   },
-  "homepage": "https://github.com/ShAd0wInK/starter-pack/blob/master/README.md",
+  "homepage": "https://github.com/ShAd0wInK/front-end-starter/blob/master/README.md",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.3",
     "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-rename": "^1.3.0",
