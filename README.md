@@ -43,7 +43,7 @@ This starter is **used to** :
  ( *I assume that you have already installed `yarn` or `npm`* )
  > Now you have **all your dependencies** installed.
 ### 2. Install gulp *( in global )* :
-* use `yarn global add gulp` **or**<> `npm install -g gulp`
+* use `yarn global add gulp` **or** `npm install -g gulp`
 > Now you can run **gulp tasks** !
 ### 3. Build and / or watch :
 * use `gulp build` to build your work **one time** ( *open `public/index.html` in your browser after that* )
