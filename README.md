@@ -10,11 +10,12 @@ This starter will help you ( *I hope* ) to make clean front-end development.
         - [1. Install dependencies :](#1-install-dependencies-)
         - [2. Install gulp *( in global )* :](#2-install-gulp--in-global--)
         - [3. Build and / or watch :](#3-build-and--or-watch-)
-    - [III - 📜 Create new scss and js files :](#iii---📜-create-new-scss-and-js-files-)
+    - [III - 📜 Create new files :](#iii---📜-create-new-files-)
         - [1. Tree](#1-tree)
-        - [2. Way to create new components files:](#2-way-to-create-new-components-files)
+        - [2. SCSS & JS components files:](#2-scss--js-components-files)
             - [SCSS](#scss)
             - [JS](#js)
+        - [3. HTML](#3-html)
     - [IV - 🗄 Dependencies](#iv---🗄-dependencies)
 
 <!-- /TOC -->
@@ -48,7 +49,7 @@ This starter is **used to** :
 * use `gulp build` to build your work **one time** ( *open `public/index.html` in your browser after that* )
 * or simply `gulp` to build it **in a loop** and actualize your modifications ( *using BrowserSync* 🔄 )
 > Now you have your dev environment **ready to work** 👍
-## III - 📜 Create new scss and js files :
+## III - 📜 Create new files :
 ### 1. Tree
 ```json
 ├── public
@@ -81,28 +82,45 @@ This starter is **used to** :
 ├── README.md
 └── yarn.lock
 ```
-### 2. Way to create new components files: 
+### 2. SCSS & JS components files: 
 #### SCSS
 * Go to `src/scss/components`
 * Create your file with this structure: `_filename.scss` 
-+ Don't forget to import this new file in `master.scss` like that: `@import: 'component/filename'`
+* Don't forget to import this new file in `master.scss` like that: `@import: 'component/filename'`
 #### JS 
 * Go to `src/js`
 * Create your file with this structure: `filename.js` 
-+ Don't forget to import this new file in `app.js` like that: `import: './filename'`
+* Don't forget to import this new file in `app.js` like that: `import: './filename'`
+### 3. HTML 
+* Go to `src/`
+* Create your file
+* Don't forget to copy the style and script link:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/master.min.css">
+</head>
+<body>
+    <!-- Code goes here -->
+    <script src="js/app.min.js" charset="UTF-8"></script>
+</body>
+</html>
+```
 ## IV - 🗄 Dependencies 
+`package.json`
 ```json
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-es2015": "^6.24.1",
-    "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.1",
-    "gulp-rename": "^1.3.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify-es": "^1.0.4",
-    "jshint": "^2.9.5",
-    "webpack-stream": "^4.0.3"
+"babel": "^6.23.0",
+"babel-core": "^6.26.3",
+"babel-preset-es2015": "^6.24.1",
+"browser-sync": "^2.24.5",
+"gulp": "^3.9.1",
+"gulp-babel": "^7.0.1",
+"gulp-rename": "^1.3.0",
+"gulp-sass": "^4.0.1",
+"gulp-uglify-es": "^1.0.4",
+"jshint": "^2.9.5",
+"webpack-stream": "^4.0.3"
 ```
 ```json
 .jshintrc
