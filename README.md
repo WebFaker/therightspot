@@ -110,17 +110,22 @@ This starter is **used to** :
 ## IV - 🗄 Dependencies 
 `package.json`
 ```json
-"babel": "^6.23.0",
-"babel-core": "^6.26.3",
-"babel-preset-es2015": "^6.24.1",
-"browser-sync": "^2.24.5",
-"gulp": "^3.9.1",
-"gulp-babel": "^7.0.1",
-"gulp-rename": "^1.3.0",
-"gulp-sass": "^4.0.1",
-"gulp-uglify-es": "^1.0.4",
-"jshint": "^2.9.5",
-"webpack-stream": "^4.0.3"
+"devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.24.5",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-rename": "^1.3.0",
+    "gulp-resolve-url": "^0.0.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.4",
+    "jshint": "^2.9.5",
+    "webpack-stream": "^4.0.3"
+}
 ```
 ```json
 .jshintrc
