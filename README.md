@@ -11,12 +11,11 @@ This starter will help you ( *I hope* ) to make clean front-end development.
         - [2. Install gulp *( in global )* :](#2-install-gulp--in-global--)
         - [3. Build and / or watch :](#3-build-and--or-watch-)
     - [III - 📜 Create new files :](#iii---📜-create-new-files-)
-        - [1. Tree](#1-tree)
-        - [2. SCSS & JS components files:](#2-scss--js-components-files)
-            - [SCSS](#scss)
-            - [JS](#js)
+        - [1. SCSS ( components )](#1-scss--components-)
+        - [2. JS ( scripts )](#2-js--scripts-)
         - [3. HTML](#3-html)
-    - [IV - 🗄 Dependencies](#iv---🗄-dependencies)
+    - [IV - 🏞 Assets](#iv---🏞-assets)
+    - [V - 🗄 Dependencies](#v---🗄-dependencies)
 
 <!-- /TOC -->
 ## Summary:
@@ -37,20 +36,6 @@ This starter is **used to** :
 2. **Copy** the *html* and *assets* files from `src` folder **and paste** them to `public`
 3. **Group** styles into a *main style file*, **compiling** and **minifying** it
 4. **Idem** for the scripts files
-## II - 👍 Make it work :
-### 1. Install dependencies :
-* use `yarn` or `npm install`
- ( *I assume that you have already installed `yarn` or `npm`* )
- > Now you have **all your dependencies** installed.
-### 2. Install gulp *( in global )* :
-* use `yarn global add gulp` **or** `npm install -g gulp`
-> Now you can run **gulp tasks** !
-### 3. Build and / or watch :
-* use `gulp build` to build your work **one time** ( *open `public/index.html` in your browser after that* )
-* or simply `gulp` to build it **in a loop** and actualize your modifications ( *using BrowserSync* 🔄 )
-> Now you have your dev environment **ready to work** 👍
-## III - 📜 Create new files :
-### 1. Tree
 ```json
 ├── public
 │   └── .gitkeep
@@ -82,12 +67,25 @@ This starter is **used to** :
 ├── README.md
 └── yarn.lock
 ```
-### 2. SCSS & JS components files: 
-#### SCSS
+## II - 👍 Make it work :
+### 1. Install dependencies :
+* use `yarn` or `npm install`
+ ( *I assume that you have already installed `yarn` or `npm`* )
+ > Now you have **all your dependencies** installed.
+### 2. Install gulp *( in global )* :
+* use `yarn global add gulp` **or** `npm install -g gulp`
+> Now you can run **gulp tasks** !
+### 3. Build and / or watch :
+* use `gulp build` to build your work **one time** ( *open `public/index.html` in your browser after that* )
+* or simply `gulp` to build it **in a loop** and actualize your modifications ( *using BrowserSync* 🔄 )
+> Now you have your dev environment **ready to work** 👍 
+## III - 📜 Create new files :
+
+### 1. SCSS ( components )
 * Go to `src/scss/components`
 * Create your file with this structure: `_filename.scss` 
 * Don't forget to import this new file in `master.scss` like that: `@import: 'component/filename'`
-#### JS 
+### 2. JS ( scripts )
 * Go to `src/js`
 * Create your file with this structure: `filename.js` 
 * Don't forget to import this new file in `app.js` like that: `import: './filename'`
@@ -107,7 +105,10 @@ This starter is **used to** :
 </body>
 </html>
 ```
-## IV - 🗄 Dependencies 
+## IV - 🏞 Assets
+Just put your assets ( images, music, videos, fonts ) in the `src/assets` folder, and it'll be copied in `public`.
+> The `url()` of backgrounds in SCSS will be updated too 😉
+## V - 🗄 Dependencies 
 `package.json`
 ```json
 "devDependencies": {
