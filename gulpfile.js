@@ -4,12 +4,13 @@ const gulp = require('gulp');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify-es').default;
-const browserSync = require('browser-sync').create();
-const webpack = require('webpack-stream');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const gulpResolveUrl = require('gulp-resolve-url');
 const cssmin = require('gulp-cssmin');
+const plumber = require('gulp-plumber');
+const webpack = require('webpack-stream');
+const browserSync = require('browser-sync').create();
 
 // Build tasks ----------------------------------
 
@@ -48,6 +49,8 @@ gulp.task('scss', function() {
 gulp.task('js', function() {
     // take the main js file
     return gulp.src('src/js/app.js')
+    // prevent for process killed
+    .pipe(plumber())
     // ??
     .pipe(babel())
     // ??

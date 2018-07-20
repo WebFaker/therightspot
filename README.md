@@ -119,6 +119,7 @@ Just put your assets ( images, music, videos, fonts ) in the `src/assets` folder
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-cssmin": "^0.2.0",
+    "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.3.0",
     "gulp-resolve-url": "^0.0.2",
     "gulp-sass": "^4.0.1",
@@ -126,7 +127,7 @@ Just put your assets ( images, music, videos, fonts ) in the `src/assets` folder
     "gulp-uglify-es": "^1.0.4",
     "jshint": "^2.9.5",
     "webpack-stream": "^4.0.3"
-}
+  }
 ```
 ```json
 .jshintrc
