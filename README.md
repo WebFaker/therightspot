@@ -126,7 +126,7 @@ Just put your assets ( images, music, videos, fonts ) in the `src/assets` folder
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify-es": "^1.0.4",
     "jshint": "^2.9.5",
-    "webpack-stream": "^5.0.0"
+    "webpack-stream": "^4.0.3"
   }
 ```
 ```json
