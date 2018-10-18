@@ -27,6 +27,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+	font-size: 62.5%;
+}
 body {
 	line-height: 1;
 }
@@ -44,4 +47,24 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* All focus */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus { 
+	outline: none; 
+}
+html {
+	font-size: 62.5%;
+}
+
+button,
+input, 
+textarea {
+	color: #000;
+	background: transparent;
+	border: 0;
 }

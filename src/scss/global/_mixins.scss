@@ -4,16 +4,16 @@
 
 // Responsive mixin -----------------------------
 @mixin resp($point) {
-    @if $point == bp-bsmall {
+    @if $point == $bp-small {
         @media (min-width: $bp-small) { @content; }
     }
-    @else if $point == bp-medium {
+    @else if $point == $bp-medium {
         @media (min-width: $bp-medium) { @content; }
     }
-    @else if $point == bp-large {
+    @else if $point == $bp-large {
         @media (min-width: $bp-large) { @content; }
     }
-    @else if $point == bp-xlarge {
+    @else if $point == $bp-xLarge {
         @media (min-width: $bp-xlarge) { @content; }
     }
 }

@@ -1,0 +1,67 @@
+// ==============================================
+// GLOBAL STYLE
+// ==============================================
+
+/** Personnal order -----------------------------
+
+* color / background / border
+* width / height / max-width / max-height
+* margin / padding
+* font-* / text-*
+* display / flex-* / justify / align-*
+* position / top / bottom / left / right / z-index
+* opacity
+* animation / transition
+* others
+**/
+
+body {
+    // I -  variables
+    background: $mainBackground;
+    color: $mainColor;
+    font-family: Helvetica, Arial;
+    font-size: 2rem;
+}
+.homeHeader {
+    &_title {
+        font-size: 5rem;
+        padding: 10px 25px;
+    }
+    // II - nesting
+    nav {
+        ul {
+            padding: 25px 50px;
+            li {
+                margin: 0 0 10px 0;
+            }
+        }
+        button {
+            @extend %button;
+            font-size: 3rem;
+            padding: 10px 20px;
+            margin: 0 50px;
+            cursor: pointer;
+        }
+    }
+    // III - partials
+    &_logo {
+        width: 50px;
+        height: auto;
+        margin: 25px;
+        // IV - mixins
+        @include resp($bp-small) {
+            width: 200px;
+        }
+    }
+}
+// IV - extends / inherit
+%button {
+    // V - operators
+    height: 100px - 2 * 12.5px;
+    border: 2px $mainColor solid;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    &:hover {
+        background: rgba(255,255,255,0.5);
+    }
+}
