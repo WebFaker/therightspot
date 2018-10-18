@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify-es').default;
 
 gulp.task('scss', () => {
 	return gulp.src('src/scss/master.scss')
@@ -18,6 +19,11 @@ gulp.task('scss', () => {
 
 gulp.task('js', () => {
 	return gulp.src('src/js/app.js')
+		.pipe(plumber())
 		.pipe(babel())
+		.pipe(rename('app.min.js'))
+		.pipe(sourcemaps.init())
+		.pipe(uglify())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('public/js'));
 });
