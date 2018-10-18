@@ -21,10 +21,8 @@
     "url": "https://github.com/blyndusk/front-end-starter/issues"
   },
   "homepage": "https://github.com/blyndusk/front-end-starter#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
-    
+    "eslint": "^5.7.0"
   }
 }
