@@ -1,0 +1,10 @@
+p {
+    color: green;
+}
+
+%link {
+    color: purple;
+    &:hover {
+        color: darkmagenta;
+    }
+}

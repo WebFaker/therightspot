@@ -1,0 +1,27 @@
+@import './global.scss';
+
+$red: #FF0000;
+$lightRed: rgba(255,0,0, 0.5);
+$darkGrey: #666;
+
+body {
+    font-size: 23rem;
+}
+#header {
+    width: calc(100% - 2 * 25px);
+    color: $red;
+    h1 {
+        font-size: 24px;
+    }
+    a {
+        @extend %link;
+        border: $lightRed;
+        background: $darkGrey;
+    }
+}
+.list {
+    display: flex;
+    &_items {
+        margin: 25px 0;
+    }
+}
