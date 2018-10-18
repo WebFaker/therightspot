@@ -3,6 +3,9 @@ public/*
 # But I'll keep the folder, so I add .gitkeep
 !public/.gitkeep
 
+# vscode files
+.vscode
+
 # Logs
 logs
 *.log
