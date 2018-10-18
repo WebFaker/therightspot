@@ -34,3 +34,8 @@ gulp.task('js', () => {
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('public/js'));
 });
+
+gulp.task('assets', () => {
+	return gulp.src('src/assets/**/*')
+		.pipe(gulp.dest('public/assets'));
+})
