@@ -2,6 +2,7 @@
   "name": "front-end-starter",
   "version": "1.0.0",
   "description": "a simplified front-end starter using gulp",
+  "browserslist": "> 0.25%, not dead",
   "main": "src/js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -37,6 +38,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify-es": "^1.0.4",
-    "node-sass": "^4.9.4"
+    "node-sass": "^4.9.4",
+    "webpack-stream": "^5.1.1"
   }
 }

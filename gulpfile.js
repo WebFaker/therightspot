@@ -8,6 +8,7 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify-es').default;
+const webpack = require('webpack-stream');
 
 gulp.task('html', () => {
 	return gulp.src('src/*.html')
@@ -30,8 +31,13 @@ gulp.task('scss', () => {
 gulp.task('js', () => {
 	return gulp.src('src/js/app.js')
 		.pipe(plumber())
+		.pipe(webpack({
+			mode: 'production',
+		}))
 		.pipe(sourcemaps.init())
-		.pipe(babel())
+		.pipe(babel({
+			presets: ['@babel/env'],
+		}))
 		.pipe(rename('app.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('public/js'))
