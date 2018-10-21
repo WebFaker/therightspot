@@ -1,9 +1,7 @@
-window.addEventListener('keydown', function(event) {
-    if ( event.code === 'Space' && event.code === 'Enter' ) {
-        
-        console.log('🎉')
-    }
-    else if (event.code === 'MetaLeft' ) {
-        console.log('🎉🎉')
-    }
-})
+const myFn = (x, y) => { return x * y; };
+
+console.log(myFn(3, 9));
+
+const myArray = [2, 5, 9].map(x => x ** 2).join(' - ');
+
+console.log(myArray);

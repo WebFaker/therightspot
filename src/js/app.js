@@ -1,4 +1,5 @@
-// Import js files
-import './ui';
+// ==============================================
+// IMPORT JS FILES
+// ==============================================
 
-console.log('app.js is running ! 💛');
+import './ui';

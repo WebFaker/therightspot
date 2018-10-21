@@ -1,11 +1,10 @@
+// ==============================================
+// IMPORT GLOBAL FILES
+// ==============================================
 
-// Import global files --------------------------
 @import 'global/reset';
 @import 'global/variables';
-@import 'global/fonts';
 @import 'global/mixins';
+@import 'global/fonts';
 @import 'global/global';
 
-// Import component files -----------------------
-@import 'components/header';
-@import 'components/footer';
