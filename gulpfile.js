@@ -5,6 +5,7 @@ const cleancss = require('gulp-clean-css');
 const htmlmin = require('gulp-htmlmin');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
+const gulpResolveUrl = require('gulp-resolve-url');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify-es').default;
@@ -22,6 +23,7 @@ gulp.task('scss', () => {
 		.pipe(plumber())
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
+		// .pipe(gulpResolveUrl())
 		.pipe(cleancss({ compatibility: 'ie8' }))
 		.pipe(rename('master.min.css'))
 		.pipe(gulp.dest('public/css'))
@@ -31,15 +33,16 @@ gulp.task('scss', () => {
 gulp.task('js', () => {
 	return gulp.src('src/js/app.js')
 		.pipe(plumber())
+		.pipe(sourcemaps.init())
 		.pipe(webpack({
 			mode: 'production',
 		}))
-		.pipe(sourcemaps.init())
 		.pipe(babel({
 			presets: ['@babel/env'],
 		}))
 		.pipe(rename('app.min.js'))
 		.pipe(uglify())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('public/js'))
 		.pipe(browserSync.stream());
 });
@@ -52,18 +55,17 @@ gulp.task('assets', () => {
 
 gulp.task('build', ['html', 'scss', 'js', 'assets']);
 
-gulp.task('watch', () => {
+gulp.task('watch', ['build'], () => {
 	gulp.watch('src/**/*.html', ['html']);
-	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/scss/**/*.scss', ['scss']);
+	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/assets', ['assets']);
 });
 
 gulp.task('default', ['watch'], () => {
 	browserSync.init({
 		server: {
-			proxy: './public',
+			baseDir: './public',
 		},
 	});
-	gulp.watch('public/*.html').on('change', browserSync.reload);
 });
