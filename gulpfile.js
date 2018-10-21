@@ -62,7 +62,8 @@ gulp.task('watch', () => {
 gulp.task('default', ['watch'], () => {
 	browserSync.init({
 		server: {
-			baseDir: './public',
+			proxy: './public',
 		},
 	});
+	gulp.watch('public/*.html').on('change', browserSync.reload);
 });
